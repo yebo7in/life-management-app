@@ -129,21 +129,6 @@ The application will be available at `http://localhost:3000`
 - `POST /api/shares` - Create share link
 - `GET /api/shares/:shareId` - Get shared content
 
-## Project Structure
-
-life-management-app/
-├── client/ # Frontend React application
-│ ├── public/
-│ └── src/
-│ ├── components/ # React components
-│ ├── api/ # API integration
-│ └── App.js # Main application component
-├── server/ # Backend Node.js application
-│ ├── models/ # MongoDB models
-│ ├── routes/ # API routes
-│ └── server.js # Server entry point
-└── README.md
-
 ## Contributing
 
 1. Fork the repository
