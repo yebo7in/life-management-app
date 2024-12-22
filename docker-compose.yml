@@ -1,0 +1,28 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+
+  backend:
+    build: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGODB_URI=mongodb://mongodb:27017/life-management
+      - FRONTEND_URL=http://localhost:3000
+    depends_on:
+      - mongodb
+
+  frontend:
+    build: ./client
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+
+volumes:
+  mongodb_data: 
