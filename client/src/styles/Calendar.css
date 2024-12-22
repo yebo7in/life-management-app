@@ -1,0 +1,35 @@
+.calendar-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.fc {
+  height: calc(100vh - 200px);
+}
+
+.fc-event {
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+}
+
+.event-form {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+.event-title {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.event-time {
+  color: var(--text-secondary);
+  font-size: 0.9em;
+} 

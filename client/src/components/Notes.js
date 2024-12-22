@@ -25,6 +25,7 @@ import {
   Delete as DeleteIcon,
   Edit as EditIcon
 } from '@material-ui/icons';
+import '../styles/Notes.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {

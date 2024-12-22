@@ -17,6 +17,7 @@ import {
 } from '@material-ui/core';
 import { FileCopy as CopyIcon } from '@material-ui/icons';
 import axios from 'axios';
+import '../styles/ShareDialog.css';
 
 const useStyles = makeStyles((theme) => ({
   formField: {

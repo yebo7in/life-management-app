@@ -1,0 +1,32 @@
+.share-dialog {
+  padding: 24px;
+}
+
+.share-form {
+  display: grid;
+  gap: 20px;
+}
+
+.share-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.share-emails {
+  margin: 16px 0;
+}
+
+.share-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.share-button {
+  margin-top: 16px;
+} 

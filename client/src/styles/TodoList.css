@@ -1,0 +1,44 @@
+.todo-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.todo-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.todo-item {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-priority-high {
+  color: var(--error-color);
+}
+
+.todo-priority-medium {
+  color: var(--warning-color);
+}
+
+.todo-priority-low {
+  color: var(--success-color);
+}
+
+.todo-due-date {
+  font-size: 0.85em;
+  color: var(--text-secondary);
+}
+
+.todo-form {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+} 

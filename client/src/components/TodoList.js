@@ -22,6 +22,7 @@ import DeleteIcon from '@material-ui/icons/Delete';
 import ShareIcon from '@material-ui/icons/Share';
 import ShareDialog from './ShareDialog';
 import { makeStyles } from '@material-ui/core/styles';
+import '../styles/TodoList.css';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {

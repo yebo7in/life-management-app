@@ -17,6 +17,7 @@ import {
   Container,
   makeStyles
 } from '@material-ui/core';
+import '../styles/Calendar.css';
 
 const useStyles = makeStyles((theme) => ({
   calendar: {
