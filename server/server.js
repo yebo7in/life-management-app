@@ -6,7 +6,12 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: process.env.NODE_ENV === 'production' 
+    ? 'https://your-netlify-app.netlify.app'
+    : 'http://localhost:3000',
+  credentials: true
+}));
 app.use(express.json());
 
 // Database connection
